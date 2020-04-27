@@ -16,7 +16,7 @@ Java.perform(function () {
     var classmethod = "{classMethod}";
     var hookclass = Java.use(classname);
     hookclass.{classMethod}.{overload}.implementation = function ({args}) {
-        console("CALLED: " + classname + "." + classmethod + "()\\n");
+        console.log("CALLED: " + classname + "." + classmethod + "()\\n");
         var ret = this.{classMethod}({args});
         var s="";
         s=s+("HOOK: " + classname + "." + classmethod + "()\\n");

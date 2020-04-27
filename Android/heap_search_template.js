@@ -13,7 +13,7 @@
 Java.performNow(function () {
     var classname = "{className}"
     var classmethod = "{classMethod}";
-    send("Heap Search - START ("+classname+")\\n");
+    console.log("Heap Search - START ("+classname+")\\n");
     Java.choose(classname, {
       onMatch: function (instance) {
         
@@ -27,5 +27,5 @@ Java.performNow(function () {
         console.log(s);
       }
     });
-    send("Heap Search - END ("+classname+")");
+    console.log("Heap Search - END ("+classname+")");
   });
