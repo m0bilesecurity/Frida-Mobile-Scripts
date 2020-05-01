@@ -27,7 +27,7 @@ Java.perform(function () {
         s=s+"OUT: "+ret+"\\n";
         s=s+"StackTrace: "+jlog.getStackTraceString(jexception.$new()) +"\\n";
         console.log(s);
-                
+        
         return ret;
     };
 })
