@@ -7,7 +7,7 @@
         * {className}
         * {classMethod}
         * {overload} = overload(<signature>)
-        * {args}
+        * {args} = v0,v1,v2, etc...
 *************************************************************************/
 
 
@@ -27,7 +27,7 @@ Java.perform(function () {
         s=s+"OUT: "+ret+"\\n";
         s=s+"StackTrace: "+jlog.getStackTraceString(jexception.$new()) +"\\n";
         console.log(s);
-        
+
         return ret;
     };
 })
