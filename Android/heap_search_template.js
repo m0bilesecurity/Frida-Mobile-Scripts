@@ -11,21 +11,44 @@
 
 
 Java.performNow(function () {
-    var classname = "{className}"
-    var classmethod = "{classMethod}";
-    console.log("Heap Search - START ("+classname+")\\n");
-    Java.choose(classname, {
-      onMatch: function (instance) {
-        
-        var s="";
-        s=s+"[*] Instance Found: " +instance.toString()+"\\n";
-        s=s+"Calling method: " +classmethod+"\\n";
-        
-        var ret = instance.{classMethod}({args}); 
+  var classname = "{className}"
+  var classmethod = "{classMethod}";
 
-        s=s+"Output: "+ ret + "\\n";
-        console.log(s);
+  Java.choose(classname, {
+      onMatch: function (instance) {
+          try 
+          {
+              var returnValue;
+              //{methodSignature}
+              returnValue = instance.{classMethod}({args}); //<-- replace v[i] with the value that you want to pass
+
+              //Output
+              var s = "";
+              s=s + "[*] Heap Search - START\\n"
+
+              s=s + "Instance Found: " + instance.toString() + "\\n";
+              s=s + "Calling method: \\n";
+              s=s + "   Class: " + classname + "\\n"
+              s=s + "   Method: " + classmethod + "\\n"
+              s=s + "-->Output: " + returnValue + "\\n";
+
+              s = s + "[*] Heap Search - END\\n"
+
+              send(s);
+          } 
+          catch (err) 
+          {
+              var s = "";
+              s=s + "[*] Heap Search - START\\n"
+              s=s + "Instance NOT Found or Exception while calling the method\\n";
+              s=s + "   Class: " + classname + "\\n"
+              s=s + "   Method: " + classmethod + "\\n"
+              s=s + "-->Exception: " + err + "\\n"
+              s=s + "[*] Heap Search - END\\n"
+              send(s)
+          }
+
       }
-    });
-    console.log("Heap Search - END ("+classname+")");
   });
+
+});
