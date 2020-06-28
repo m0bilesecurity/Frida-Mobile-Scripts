@@ -3,7 +3,6 @@
  * OS: Android
  * Authors: Mattia Vinci and Maurizio Agazzini (Mediaservice)
  * Source: https://techblog.mediaservice.net/2018/11/universal-android-ssl-pinning-bypass-2/
- * Info: 
  *************************************************************************/
 
 Java.perform(function() {
