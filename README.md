@@ -6,5 +6,6 @@ Collection of useful FRIDA Mobile Scripts
 * [FSecureLABS](https://github.com/FSecureLABS/android-keystore-audit)
 * [Mediaservice](https://techblog.mediaservice.net/)
 * [iddoeldor](https://github.com/iddoeldor)
-* [dzonerzy](https://codeshare.frida.re/@dzonerzy/fridantiroot/)
-* [Maurizio Siddu](https://github.com/akabe1/my-FRIDA-scripts)
+* [dzonerzy](https://github.com/dzonerzy)
+* [akabe1](https://github.com/akabe1/my-FRIDA-scripts)
+* [Areizen](https://github.com/Areizen)
