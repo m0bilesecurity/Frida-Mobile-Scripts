@@ -48,4 +48,4 @@ Interceptor.replace(ssl_get_psk_identity, new NativeCallback(function(ssl) {
     return "notarealPSKidentity";
 }, 'pointer', ['pointer']));
     
-console.log("[+] Bypass successfully loaded ");	
+console.log("[+] iOS 12 SSL Pinning Bypass - successfully loaded ");
