@@ -17,3 +17,4 @@ Collection of useful FRIDA Mobile Scripts
 * [fadeevab](https://codeshare.frida.re/@fadeevab/intercept-android-apk-crypto-operations/)
 * [federicodotta](https://github.com/federicodotta/Brida)
 * [noobpk](https://github.com/noobpk/frida-ios-hook)
+* [enovella](https://github.com/enovella/fridroid-unpacker)
